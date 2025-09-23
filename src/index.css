@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply bg-white text-black;
+  }
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+html,
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+html,
+body {
+  overflow-y: scroll;
+}
