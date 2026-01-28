@@ -29,7 +29,7 @@ export default function Loader({ onComplete = () => { } }) {
           <motion.div
             initial={{ scale: 1, opacity: 1 }}
             animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 6, opacity: 0 }}
+            exit={{ scale: 3, opacity: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className="flex flex-col items-center"
           >
@@ -41,7 +41,6 @@ export default function Loader({ onComplete = () => { } }) {
                 onError={e => (e.currentTarget.style.display = "none")}
               />
               {/* Spinner ring overlay */}
-              {/* Classic spinner: white and dark border */}
               <div className="absolute w-28 h-28 border-4 border-white border-t-transparent rounded-full animate-spin" />
             </div>
             {/* Removed Loading... text as requested */}
